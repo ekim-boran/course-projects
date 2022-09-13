@@ -1,0 +1,71 @@
+name:                cs3141
+version:             0.1.0.0
+github:              "githubuser/cs3141"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2022 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/cs3141#readme>
+default-extensions: 
+  - ViewPatterns
+  - MultiParamTypeClasses
+  - OverloadedStrings
+  - RecordWildCards
+  - TupleSections
+  - MultiParamTypeClasses 
+  - NoMonomorphismRestriction 
+  - FlexibleInstances
+  - TypeSynonymInstances  
+  - NoMonomorphismRestriction
+  - FlexibleContexts
+  - StandaloneDeriving
+  - ScopedTypeVariables
+  - GHC2021
+  - GADTs
+dependencies:
+- base >= 4.7 && < 5
+- JuicyPixels
+- Rasterific
+- QuickCheck
+- mtl
+- random
+- tasty 
+- tasty-quickcheck 
+- tasty-hunit 
+- transformers 
+library:
+  source-dirs: src
+
+executables:
+  cs3141-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cs3141
+
+tests:
+  cs3141-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cs3141

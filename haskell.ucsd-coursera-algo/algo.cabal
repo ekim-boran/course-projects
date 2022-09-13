@@ -1,0 +1,194 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           algo
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/algo#readme>
+homepage:       https://github.com/githubuser/algo#readme
+bug-reports:    https://github.com/githubuser/algo/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/algo
+
+library
+  exposed-modules:
+      Course1.W1
+      Course1.W2
+      Course1.W3
+      Course1.W4
+      Course1.W5
+      Course1.W6
+      Course2.W1
+      Course2.W2
+      Course2.W3
+      Course2.W4
+      Course3.Graph1
+      Course3.TestGraphs
+      Course3.W1
+      Course3.W2
+      Course3.W3
+      Course3.W4
+      Course3.W5
+      Course5.W1
+      Course5.W3
+      Course5.W4
+      Course5.W4Q3
+      DisjointUnion
+      Graph
+      Heap.BinomialHeap
+      Heap.LeftistHeap
+      Lib
+      Queue.Bankers
+      Queue.BatchedQueue
+      Queue.Class
+      Queue.PhysicistsQueue
+      Set.AVL
+      Set.BST
+      Set.IntTrie
+      Set.Naive
+      Set.Splay
+      Util
+  other-modules:
+      Paths_algo
+  hs-source-dirs:
+      src
+  default-extensions:
+      ViewPatterns
+      MultiParamTypeClasses
+      OverloadedStrings
+      RecordWildCards
+      TupleSections
+      MultiParamTypeClasses
+      NoMonomorphismRestriction
+      FlexibleInstances
+      TypeSynonymInstances
+      NoMonomorphismRestriction
+      FlexibleContexts
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      DeriveAnyClass
+      TemplateHaskell
+      StandaloneDeriving
+      ScopedTypeVariables
+      GHC2021
+  build-depends:
+      QuickCheck
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , data-memocombinators
+    , extra
+    , hspec
+    , minisat-solver
+    , parsec
+    , random
+    , rio
+    , text
+    , vector
+  default-language: Haskell2010
+
+executable algo-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_algo
+  hs-source-dirs:
+      app
+  default-extensions:
+      ViewPatterns
+      MultiParamTypeClasses
+      OverloadedStrings
+      RecordWildCards
+      TupleSections
+      MultiParamTypeClasses
+      NoMonomorphismRestriction
+      FlexibleInstances
+      TypeSynonymInstances
+      NoMonomorphismRestriction
+      FlexibleContexts
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      DeriveAnyClass
+      TemplateHaskell
+      StandaloneDeriving
+      ScopedTypeVariables
+      GHC2021
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , algo
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , data-memocombinators
+    , extra
+    , hspec
+    , minisat-solver
+    , parsec
+    , random
+    , rio
+    , text
+    , vector
+  default-language: Haskell2010
+
+test-suite algo-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_algo
+  hs-source-dirs:
+      test
+  default-extensions:
+      ViewPatterns
+      MultiParamTypeClasses
+      OverloadedStrings
+      RecordWildCards
+      TupleSections
+      MultiParamTypeClasses
+      NoMonomorphismRestriction
+      FlexibleInstances
+      TypeSynonymInstances
+      NoMonomorphismRestriction
+      FlexibleContexts
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      DeriveAnyClass
+      TemplateHaskell
+      StandaloneDeriving
+      ScopedTypeVariables
+      GHC2021
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , algo
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , data-memocombinators
+    , extra
+    , hspec
+    , minisat-solver
+    , parsec
+    , random
+    , rio
+    , text
+    , vector
+  default-language: Haskell2010

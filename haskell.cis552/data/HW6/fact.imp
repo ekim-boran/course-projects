@@ -1,0 +1,11 @@
+n = 5;
+f = 1;
+while (n > 0) {
+  x = n;
+  z = f;
+  while (x > 1) {
+    f = z + f;
+    x = x - 1;
+  }
+  n = n - 1;
+}

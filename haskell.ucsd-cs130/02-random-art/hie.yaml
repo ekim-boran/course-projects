@@ -1,0 +1,4 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "hw2-random-art:lib"

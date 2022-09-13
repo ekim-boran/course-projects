@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/_**": true,
+        //"**/**.asm": true,
+        "**/**.d": true,
+        "**/**.o": true,
+        "**/**.sym": true
+    },
+    "explorer.sortOrder": "type",
+    "C_Cpp.default.cStandard": "c17",
+    "clang.cflags": [
+        "-Wall",
+        "-Wextra"
+    ],
+    "files.associations": {
+        "types.h": "c",
+        "stat.h": "c",
+        "user.h": "c",
+        "sysinfo.h": "c",
+        "defs.h": "c",
+        "proc.h": "c"
+    },
+}

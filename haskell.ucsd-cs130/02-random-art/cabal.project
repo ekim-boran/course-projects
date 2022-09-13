@@ -1,0 +1,4 @@
+packages:
+  hw2-random-art.cabal
+  
+store-dir: /software/CSE/cse130/.cabal/store

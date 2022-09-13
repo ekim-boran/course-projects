@@ -1,0 +1,122 @@
+[
+  {
+    "name":"gc-0",
+    "code":"file",
+    "heap":4,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-1",
+    "code":"file",
+    "heap":9,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-2",
+    "code":"file",
+    "heap":9,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-3",
+    "code":"file",
+    "heap":9,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-fun-0",
+    "code":"file",
+    "heap":9,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-fun-1",
+    "code":"file",
+    "heap":19,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-copy-0",
+    "code":"file",
+    "heap":9,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-copy-1",
+    "code":"file",
+    "heap":9,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"gc-list-0",
+    "code":"file",
+    "heap":23,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"list-0",
+    "code":"file",
+    "heap":23,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"list-1",
+    "code":"file",
+    "heap":23,
+    "result":{
+      "failure":"Out of memory"
+    }
+  },
+  {
+    "name":"list-2",
+    "code":"file",
+    "heap":47,
+    "result":{
+      "failure": "Out of memory"
+    }
+  },
+  {
+    "name":"list-3",
+    "code":"file",
+    "heap":35,
+    "result":{
+      "failure": "Out of memory"
+    }
+  },
+  {
+    "name":"list-4",
+    "code":"file",
+    "heap":35,
+    "result":{
+      "failure": "Out of memory"
+    }
+  },
+  {
+    "name":"list-full-neg",
+    "code":"file",
+    "heap":71,
+    "result":{
+      "failure":"Out of memory"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+def link(h, t):
+  (h, t)
+
+def reverseHelper(acc, l):
+  if l == false:
+    acc
+  else: 
+    let h = l[0],
+        t = l[1],
+        next = link(h, acc)
+    in 
+        reverseHelper(next, t)
+
+
+let l0 = (5, false)
+in
+    reverseHelper(false, l0)
+

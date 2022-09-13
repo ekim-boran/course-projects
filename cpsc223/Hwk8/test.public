@@ -1,0 +1,59 @@
+#!/usr/bin/python3
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk8'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+inputDir = os.path.join(baseDir, 'testFiles')
+
+executables = "decompress testCompress".split()
+
+# supply these as well in case somebody is relying on them
+supplied = "decompress.c compressionFormat.h".split()
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-04-07 23:59', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('Makefile')
+    for i in glob.glob('*.[ch]'):
+        t.copy(i)
+except:
+    pass
+
+# copy all the supplied files
+for i in supplied:
+    t.copy(os.path.join(baseDir, i))
+
+# make succeeds
+t.test(16, "make compress || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+# replace compress etc. with stock version
+for i in executables:
+    t.copy(os.path.join(baseDir, i), mode = 0o555)
+
+# sample inputs and outputs
+inputs = glob.glob(os.path.join(inputDir, '*'))
+inputs.sort()
+for input in inputs:
+    inputBase = os.path.basename(input)
+    threshold = int(inputBase.split('-')[0])
+    t.copy(input)
+    t.test(7, './testCompress {}'.format(inputBase), 
+           tester.LessThan(threshold), 10)
+
+# valgrind
+for i in ("25500-empty", "105-mixed"):
+    t.log("# valgrind test on {}".format(i))
+    t.test(7, "exec valgrind -q --partial-loads-ok=yes --leak-check=yes ./compress < {} > /dev/null".format(i),
+        tester.Match(b''),
+        30)
+
+print(t.report())

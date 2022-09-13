@@ -1,0 +1,51 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk6'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+inputDir = os.path.join(baseDir, 'testFiles')
+
+sourceFiles = ("Makefile buffer.h editor.c randomizer.c").split()
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-03-26 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('buffer.c')
+except:
+    pass
+
+# copy all the source files
+for i in sourceFiles:
+    t.copy(os.path.join(baseDir, i))
+
+# make succeeds
+t.test(20, "make all || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+# sample inputs and outputs
+inputs = glob.glob(os.path.join(inputDir, '*.in'))
+inputs.sort()
+for input in inputs:
+    output = input.replace('.in', '.out')
+    inputBase = os.path.basename(input)
+    n = inputBase.split('-')[0]
+    t.copy(input)
+    t.test(4, 'LC_ALL=C ./editor {} < {}'.format(n, inputBase), 
+           tester.Match(open(output, "rb").read()), 10)
+
+# valgrind
+for i in ("1-allChars.in", "100-100-random.in"):
+    t.log("# valgrind test on {}".format(i))
+    t.test(8, "exec valgrind -q --partial-loads-ok=yes --leak-check=yes ./editor 50 < {} > /dev/null".format(i),
+        tester.Match(b''),
+        30)
+
+print(t.report())

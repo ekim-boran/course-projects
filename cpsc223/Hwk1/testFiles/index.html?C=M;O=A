@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classes/cs223/current-s2017/hws/Hwk1/testFiles</title>
+ </head>
+ <body>
+<h1>Index of /classes/cs223/current-s2017/hws/Hwk1/testFiles</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=D">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/classes/cs223/current-s2017/hws/Hwk1/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.allChars.in">encode.allChars.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow10.in">encode.cow10.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 13 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow11.in">encode.cow11.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 14 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow12.in">encode.cow12.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 15 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow13.in">encode.cow13.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 16 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow2.in">encode.cow2.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  4 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow3.in">encode.cow3.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  6 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow55.in">encode.cow55.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 58 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow9.in">encode.cow9.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 12 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.digits2.in">encode.digits2.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 21 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.digits3.in">encode.digits3.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 31 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.digits.in">encode.digits.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 11 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.perth.in">encode.perth.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 99 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="decode.allChars.in">decode.allChars.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="decode.cow55.in">decode.cow55.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 15 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="decode.digits3.in">decode.digits3.in</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 21 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.allChars.out">encode.allChars.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow10.out">encode.cow10.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  5 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow11.out">encode.cow11.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  6 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow12.out">encode.cow12.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  7 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow13.out">encode.cow13.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  7 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow2.out">encode.cow2.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  4 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow3.out">encode.cow3.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  5 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow55.out">encode.cow55.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 15 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.cow9.out">encode.cow9.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">  5 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.digits2.out">encode.digits2.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 21 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.digits3.out">encode.digits3.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 21 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.digits.out">encode.digits.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 21 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="encode.perth.out">encode.perth.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 56 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="decode.allChars.out">decode.allChars.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="decode.cow55.out">decode.cow55.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 58 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="decode.digits3.out">decode.digits3.out</a></td><td align="right">2021-02-21 11:25  </td><td align="right"> 31 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.6 (Red Hat Enterprise Linux) Server at zoo.cs.yale.edu Port 443</address>
+</body></html>

@@ -1,0 +1,15 @@
+[package]
+name = "webchat"
+version = "0.1.0"
+authors = ["CIS 198 <cis198@cis.upenn.edu>"]
+edition = "2018"
+
+[dependencies]
+tide = { version = "*"  }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "*"
+async-tungstenite = "*"
+futures  = "*"
+futures-util  = "*"
+async-std  = { version = "*", features = ["unstable"] }
+ 

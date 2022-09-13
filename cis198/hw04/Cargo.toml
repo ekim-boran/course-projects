@@ -1,0 +1,7 @@
+[package]
+name = "hw04"
+version = "0.1.0"
+authors = ["CIS 198 <cis198@cis.upenn.edu>"]
+
+[dependencies]
+rand = "0.8.4"

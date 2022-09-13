@@ -1,0 +1,14 @@
+createDestroy.final:./testCreateDestroy 6
+minKeySmall.fina:./testMinKey 1
+minKey.final:./testMinKey 4
+incKeyEmpty.final:./testIncKey ""
+incKey.final:./testIncKey vvzxzz
+incKeyOverflow.final:./testIncKey zzzzzzzzzzzzzz
+refqr.final:./testArrayRef 2 qr
+refabc.final:./testArrayRef 2 abc
+print.final:./testPrint 2
+fill.final:./testFill 2
+multiple3.final:./testMultiple 3 8
+multiple5.final:./testMultiple 5 2
+ngrams.final:./ngrams 4 < testMultiple.c
+valgrind.final:valgrind -q --partial-loads-ok=yes --leak-check=yes ./testMultiple 3 7

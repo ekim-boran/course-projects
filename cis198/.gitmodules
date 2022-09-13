@@ -1,0 +1,24 @@
+[submodule "hw02/starter"]
+	path = hw02/starter
+	url = git@github.com:cis198-2016s/hw02.git
+	branch = master
+[submodule "hw03/starter"]
+	path = hw03/starter
+	url = git@github.com:cis198-2016s/hw03.git
+	branch = master
+[submodule "hw04/starter"]
+	path = hw04/starter
+	url = git@github.com:cis198-2016s/hw04.git
+	branch = master
+[submodule "hw05/starter"]
+	path = hw05/starter
+	url = git@github.com:cis198-2016s/hw05.git
+	branch = master
+[submodule "hw06/starter"]
+	path = hw06/starter
+	url = git@github.com:cis198-2016s/hw06.git
+	branch = master
+[submodule "hw07/starter"]
+	path = hw07/starter
+	url = git@github.com:cis198-2016s/hw07.git
+	branch = master

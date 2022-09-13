@@ -1,0 +1,35 @@
+def emp(): 
+  false 
+
+def cons(h, t):
+  (h, t)
+
+def head(l):
+  l[0]
+
+def tail(l):
+  l[1]
+
+def isEmp(l):
+  l == emp() 
+
+def range(i, j):
+  if (i < j):
+    cons(i, range(i+1, j))
+  else: 
+    emp()
+
+def foldl(f, acc, xs):
+  if isEmp(xs):
+    acc 
+  else:
+    foldl(f, f(acc, head(xs)), tail(xs)) 
+
+def fac(n):
+  foldl((lambda (x, y): x * y), 1, range(1, n+1))
+
+let t3 = fac(3)
+  , t4 = fac(4)
+  , t5 = fac(5)
+in 
+  (t3, t4, t5)

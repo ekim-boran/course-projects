@@ -1,0 +1,54 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk3'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+inputDir = os.path.join(baseDir, 'testFiles')
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-03-04 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('pancake.c')
+except:
+    pass
+
+# other source files
+sourceFiles = ['pancake.h', 'main.c']
+
+for i in sourceFiles:
+    t.copy(os.path.join(baseDir, i))
+
+# 10 pts if program compiles with all flags
+t.test(10, "gcc -std=c99 -Wall -pedantic -o main main.c pancake.c -lm", tester.Match(b''), 20)
+
+# 10 pts if program compiles at all
+t.test(10, "gcc -std=c99 -o main main.c pancake.c -lm || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+
+# sample inputs and outputs
+# 5 points for each test
+inputs = glob.glob(os.path.join(inputDir, '*.in'))
+inputs.sort()
+for input in inputs:
+    output = input.replace('.in', '.out')
+    inputBase = os.path.basename(input)
+    t.copy(input)
+    t.test(5, 'LC_ALL=C ./main < {}'.format(inputBase), 
+           tester.Match(open(output, "rb").read()))
+# valgrind
+for i in ("sort5.in", "big.in"):
+    t.log("# valgrind test on {}".format(i))
+    t.test(5, "exec valgrind -q --partial-loads-ok=yes --leak-check=yes ./main < {} > /dev/null".format(i),
+        tester.Match(b''),
+        30)
+
+print(t.report())

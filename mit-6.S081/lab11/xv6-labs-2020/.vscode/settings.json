@@ -1,0 +1,30 @@
+{
+    "files.exclude": {
+        "**/_**": true,
+        //"**/**.asm": true,
+        "**/**.d": true,
+        "**/**.o": true,
+        "**/**.sym": true
+    },
+    "explorer.sortOrder": "type",
+    "C_Cpp.default.cStandard": "c17",
+    "clang.cflags": [
+        "-Wall",
+        "-Wextra"
+    ],
+    "files.associations": {
+        "types.h": "c",
+        "stat.h": "c",
+        "user.h": "c",
+        "sysinfo.h": "c",
+        "defs.h": "c",
+        "proc.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "ranges": "c",
+        "*.tcc": "c",
+        "fstream": "c",
+        "tuple": "c"
+    },
+}

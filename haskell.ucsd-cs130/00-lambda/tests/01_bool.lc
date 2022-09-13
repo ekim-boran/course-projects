@@ -1,0 +1,55 @@
+
+-------------------------------------------------------------------------------
+-- DO NOT MODIFY THIS SEGMENT
+-------------------------------------------------------------------------------
+
+let TRUE  = \x y -> x
+let FALSE = \x y -> y
+let ITE   = \b x y -> b x y
+let NOT   = \b x y -> b y x
+let AND   = \b1 b2 -> ITE b1 b2 FALSE
+let OR    = \b1 b2 -> ITE b1 TRUE b2
+
+-------------------------------------------------------------------------------
+-- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
+-------------------------------------------------------------------------------
+
+eval not_true :
+  NOT TRUE
+  =d> (\b x y -> b y x) (\x y -> x) 
+  =a> (\b x y -> b y x) (\m n -> m) 
+  =b> (\x y -> (\m n -> m) y x) 
+  =b> (\x y -> (\n -> y) x)
+  =b> (\x y -> y) 
+  =d> FALSE
+
+eval and_true_false :
+  AND TRUE FALSE
+  =d> (\b1 b2 -> ITE b1 b2 FALSE) (\x y -> x) (\x y -> y) 
+  =b> (\b2 -> ITE (\x y -> x) b2 FALSE) (\x y -> y) 
+  =a> (\b2 -> ITE (\m n -> m) b2 FALSE) (\c d -> d) 
+  =b> ITE (\m n -> m) (\c d -> d) FALSE
+  =d> (\b x y -> b x y) (\m n -> m) (\c d -> d) FALSE
+  =b> (\x y -> (\m n -> m) x y) (\c d -> d) FALSE
+  =b> (\x y -> (\n -> x) y) (\c d -> d) FALSE
+  =b> (\x y -> x) (\c d -> d) FALSE
+  =b> (\y -> (\c d -> d)) FALSE
+  =b> (\c d -> d)
+  =a> (\x y -> y)
+  =d> FALSE
+
+
+eval or_false_true :
+  OR FALSE TRUE
+  =d> (\b1 b2 -> ITE b1 TRUE b2) (\x y -> y) (\x y -> x)
+  =a> (\b1 b2 -> ITE b1 TRUE b2) (\m n -> n) (\c d -> c)
+  =b> (\b2 -> ITE (\m n -> n) TRUE b2)  (\c d -> c)
+  =b> ITE (\m n -> n) TRUE (\c d -> c)  
+  =d> (\b x y -> b x y )  (\m n -> n) TRUE (\c d -> c)  
+  =b> (\x y -> (\m n -> n)  x y ) TRUE (\c d -> c)  
+  =b> (\x y -> (\n -> n)  y ) TRUE (\c d -> c)  
+  =b> (\x y -> y ) TRUE (\c d -> c)  
+  =b> (\y -> y ) (\c d -> c)  
+  =b> (\c d -> c)  
+  =a> (\x y -> x)  
+  =d> TRUE

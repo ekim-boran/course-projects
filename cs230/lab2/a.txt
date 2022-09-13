@@ -1,0 +1,11 @@
+#######################################################
+# Process formatting according to the clang format file
+#######################################################
+Completed formatting
+gcc -O -m32 -Wall -Wextra -Wno-unused-parameter -Wno-cast-function-type -Wno-unused-variable -Wno-implicit-function-declaration -Werror -pedantic -fno-builtin-printf -fsanitize=address -lm -o btest bits.c btest.c decl.c tests.c
+#################################
+# Check the code is in the format
+#################################
+Everything is in the format
+./driver.pl
+1. Running './dlc -z' to identify coding rules violations.

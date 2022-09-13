@@ -1,0 +1,48 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk10'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+tests = os.path.join(baseDir, 'tests.in')
+
+inputs = glob.glob(os.path.join(baseDir, '*.orders'))
+
+sourceFiles = "orderBook.h testOrderBook.c".split()
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-04-22 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('Makefile')
+    for i in glob.glob('*.[ch]'):
+        t.copy(i)
+except:
+    pass
+
+# grab inputs
+for i in inputs:
+    t.copy(i)
+
+# grab sourceFiles 
+for i in sourceFiles:
+    t.copy(os.path.join(baseDir, i))
+
+# make succeeds
+t.test(20, "make testOrderBook || echo compile failed", lambda s: s.find(b'compile failed') < 0, 10)
+
+# sample inputs and outputs
+for line in open(tests, 'r'):
+    filename, command = line.split(':')
+    output = os.path.join(filename + ".out")
+    command = command.strip()
+    t.test(8, command, tester.Match(open(os.path.join(baseDir, output), "rb").read()), 10)
+
+print(t.report())

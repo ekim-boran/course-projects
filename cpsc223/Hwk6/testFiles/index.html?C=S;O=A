@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classes/cs223/current-s2017/hws/Hwk6/testFiles</title>
+ </head>
+ <body>
+<h1>Index of /classes/cs223/current-s2017/hws/Hwk6/testFiles</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=D">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/classes/cs223/current-s2017/hws/Hwk6/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="1-empty.in">1-empty.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">  0 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="1000000-empty.in">1000000-empty.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">  0 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="0-cursor-out-of-range.in">0-cursor-out-of-range.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 15 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-cursor-out-of-range.in">1-cursor-out-of-range.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 15 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-null.in">1-null.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 16 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-cursor-overflow.in">1-cursor-overflow.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 29 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="0-cursor-out-of-range.out">0-cursor-out-of-range.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 30 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-empty.out">1-empty.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 30 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-cursor-out-of-range.out">1-cursor-out-of-range.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 33 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-cursor-overflow.out">1-cursor-overflow.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 35 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-null.out">1-null.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 36 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1000000-empty.out">1000000-empty.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 36 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-allChars.out">1-allChars.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 61 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-100-random.out">1-100-random.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 67 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="100-100-random.out">100-100-random.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 69 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-100-random.in">1-100-random.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">238 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="100-100-random.in">100-100-random.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">418 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1000-reverse-insert.out">1000-reverse-insert.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-allChars.in">1-allChars.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="2-10000-random.out">2-10000-random.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right">3.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="2-10000-random.in">2-10000-random.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 28K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="100000-100000-random.out">100000-100000-random.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right"> 33K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="100-1000000-random.out">100-1000000-random.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right">326K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="100000-100000-random.in">100000-100000-random.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">706K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="1-moby.out">1-moby.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="2-split-moby.out">2-split-moby.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="1-reverse-moby.out">1-reverse-moby.out</a></td><td align="right">2021-03-31 10:00  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="1-moby.in">1-moby.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">2.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1000-reverse-insert.in">1000-reverse-insert.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">2.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="2-split-moby.in">2-split-moby.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">2.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="1-reverse-moby.in">1-reverse-moby.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">3.5M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="100-1000000-random.in">100-1000000-random.in</a></td><td align="right">2021-03-31 10:00  </td><td align="right">4.0M</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.6 (Red Hat Enterprise Linux) Server at zoo.cs.yale.edu Port 443</address>
+</body></html>

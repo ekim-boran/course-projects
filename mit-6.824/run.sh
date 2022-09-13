@@ -1,0 +1,12 @@
+cd raft 
+go test
+cd ..
+cd kvraft 
+go test
+cd ..
+cd shardctrler 
+go test
+cd ..
+cd shardkv 
+go test
+cd ..

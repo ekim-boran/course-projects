@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/_**": true,
+        "**/**.d": true,
+        "**/**.o": true,
+        "**/**.sym": true
+    },
+    "explorer.sortOrder": "type",
+    "C_Cpp.default.cStandard": "c17",
+    "clang.cflags": [
+        "-Wall",
+        "-Wextra"
+    ],
+    "files.associations": {
+        "random": "c",
+        "typeinfo": "c"
+    },
+}

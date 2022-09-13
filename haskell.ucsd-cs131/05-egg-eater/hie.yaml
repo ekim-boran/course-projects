@@ -1,0 +1,8 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "egg:lib"
+    - path: "./lib"
+      component: "egg:lib"
+    - path: "./sol"
+      component: "egg:lib"

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+COMPRESS=./compress
+DECOMPRESS=./decompress
+
+INPUT="$1"
+
+TEST_COMPRESSED=$(mktemp)
+TEST_DECOMPRESSED=$(mktemp)
+
+# make sure test files are always deleted
+cleanup() {
+    rm -f $TEST_COMPRESSED $TEST_DECOMPRESSED
+}
+trap cleanup 0
+
+$COMPRESS < "$INPUT" > $TEST_COMPRESSED
+$DECOMPRESS < $TEST_COMPRESSED > $TEST_DECOMPRESSED
+
+# check decompression
+if ! cmp "$INPUT" $TEST_DECOMPRESSED; then
+    echo Decompressed data does not match original input
+    exit 1
+fi
+
+# print size ratio as percentage
+# we add 1 to denominator to avoid dividing by zero
+echo $((100 * $(stat -c %s $TEST_COMPRESSED) / (1 + $(stat -c %s $TEST_DECOMPRESSED))))

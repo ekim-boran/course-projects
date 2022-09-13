@@ -1,0 +1,46 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk9'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+inputDir = os.path.join(baseDir, 'testFiles')
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-04-15 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('Makefile')
+    for i in glob.glob('*.[ch]'):
+        t.copy(i)
+except:
+    pass
+
+# make succeeds
+t.test(20, "make pfml || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+# sample inputs and outputs
+inputs = glob.glob(os.path.join(inputDir, '*.pfml'))
+inputs.sort()
+for input in inputs:
+    output = input.replace('.pfml', '.out')
+    inputBase = os.path.basename(input)
+    t.copy(input)
+    t.test(5, 'LC_ALL=C ./pfml < {}'.format(inputBase), 
+           tester.Match(open(output, "rb").read()), 10)
+
+# valgrind
+for i in ("short-tree.pfml", "moby.pfml"):
+    t.log("# valgrind test on {}".format(i))
+    t.test(5, "exec valgrind -q --partial-loads-ok=yes --leak-check=yes ./pfml < {} > /dev/null".format(i),
+        tester.Match(b''),
+        30)
+
+print(t.report())

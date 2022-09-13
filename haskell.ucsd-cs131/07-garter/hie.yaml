@@ -1,0 +1,11 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "garter:lib"
+    - path: "./lib"
+      component: "garter:lib"
+    - path: "./sol"
+      component: "garter:lib"
+    - path: "./tests"
+      component: "garter:test"
+ 

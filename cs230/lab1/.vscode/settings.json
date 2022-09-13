@@ -1,0 +1,17 @@
+{
+    "C_Cpp.default.compilerArgs": [
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+    ],
+    "clang.cflags": [
+        "-Wall",
+        "-Werror",
+        "-Wextra",
+    ],
+    "files.associations": {
+        "tuple": "c",
+        "algorithm": "c"
+    },
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format-10"
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classes/cs223/current-s2017/hws/Hwk9/testFiles</title>
+ </head>
+ <body>
+<h1>Index of /classes/cs223/current-s2017/hws/Hwk9/testFiles</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=D">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/classes/cs223/current-s2017/hws/Hwk9/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="empty.out">empty.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  0 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="empty.pfml">empty.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  0 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="minimal.out">minimal.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  0 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="minimal.pfml">minimal.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  2 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="abc.out">abc.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  3 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="abc.pfml">abc.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  3 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reverse1.out">reverse1.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  3 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="symmetric.out">symmetric.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  3 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reverse2.out">reverse2.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  4 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reverse1.pfml">reverse1.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  5 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="symmetric.pfml">symmetric.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  5 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="newline.out">newline.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  7 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reverse2.pfml">reverse2.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  8 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="newline.pfml">newline.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">  9 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="null.out">null.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right"> 31 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="null.pfml">null.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right"> 33 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="short-tree.out">short-tree.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right"> 40 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="short-tree.pfml">short-tree.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right"> 48 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="thin-tree.out">thin-tree.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right"> 69 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="thin-tree.pfml">thin-tree.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">115 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="boustrophedonic.out">boustrophedonic.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">629 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="boustrophedonic.pfml">boustrophedonic.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">643 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="allChars.out">allChars.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="allChars.pfml">allChars.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="moby.out">moby.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reverse-moby.out">reverse-moby.out</a></td><td align="right">2021-04-18 00:01  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="reverse-moby.pfml">reverse-moby.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="moby.pfml">moby.pfml</a></td><td align="right">2021-04-18 00:01  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.6 (Red Hat Enterprise Linux) Server at zoo.cs.yale.edu Port 443</address>
+</body></html>

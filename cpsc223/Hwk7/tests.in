@@ -1,0 +1,8 @@
+empty-empty:./decrypt salt /dev/null < /dev/null
+empty-small:./decrypt salt /dev/null < turtles.encrypted
+small-small:./decrypt salt password.dict < turtles.encrypted
+small-small-wrong-salt:./decrypt pepper password.dict < turtles.encrypted
+big-small:./decrypt salt passwords.dict < turtles.encrypted
+small-ssn:./decrypt identity-theft ssn1.dict < ssn.encrypted
+ssn:./decrypt identity-theft ssn.dict < ssn.encrypted
+ssn-wrong-salt:./decrypt ssn ssn.dict < ssn.encrypted

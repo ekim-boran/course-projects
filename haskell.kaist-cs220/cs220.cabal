@@ -1,0 +1,263 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           cs220
+version:        0.1.0.0
+description:    Please see the README on Gitlab at <https://cp-git.kaist.ac.kr/cs220/cs220>
+author:         Jeehoon Kang
+maintainer:     jeehoon.kang@kaist.ac.kr
+copyright:      2021 Jeehoon Kang
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://cp-git.kaist.ac.kr/cs220/cs220.git
+
+library
+  exposed-modules:
+      A01
+      A02
+      A02_Defs
+      A03
+      A03_Defs
+      A04
+      A04_Defs
+      A05
+      A05_Defs
+      A06
+      Lib
+      S01_Gcd
+      S02_Collection
+      S02_Custom
+      S02_Day
+      S02_Nat
+      S02_Point
+      S02_Primitive
+      S02_Tuple
+      S03_Expression
+      S04_Function
+      S06_OpaqueType
+      S07_Combinator
+      S07_Polynomial
+      S08_Monad
+      S08_State
+      S10_Composition
+  other-modules:
+      Paths_cs220
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+executable cs220-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_cs220
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+test-suite a01-check
+  type: exitcode-stdio-1.0
+  main-is: A01_Check.hs
+  other-modules:
+      A02_Check
+      A03_Check
+      A03_Check_Random_Instr
+      A03_Check_Random_Step
+      A04_Check
+      A05_Check
+      A06_Check
+      Paths_cs220
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is A01_Check
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+test-suite a02-check
+  type: exitcode-stdio-1.0
+  main-is: A02_Check.hs
+  other-modules:
+      A01_Check
+      A03_Check
+      A03_Check_Random_Instr
+      A03_Check_Random_Step
+      A04_Check
+      A05_Check
+      A06_Check
+      Paths_cs220
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is A02_Check
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+test-suite a03-check
+  type: exitcode-stdio-1.0
+  main-is: A03_Check.hs
+  other-modules:
+      A01_Check
+      A02_Check
+      A03_Check_Random_Instr
+      A03_Check_Random_Step
+      A04_Check
+      A05_Check
+      A06_Check
+      Paths_cs220
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is A03_Check
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+test-suite a04-check
+  type: exitcode-stdio-1.0
+  main-is: A04_Check.hs
+  other-modules:
+      A01_Check
+      A02_Check
+      A03_Check
+      A03_Check_Random_Instr
+      A03_Check_Random_Step
+      A05_Check
+      A06_Check
+      Paths_cs220
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is A04_Check
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+test-suite a05-check
+  type: exitcode-stdio-1.0
+  main-is: A05_Check.hs
+  other-modules:
+      A01_Check
+      A02_Check
+      A03_Check
+      A03_Check_Random_Instr
+      A03_Check_Random_Step
+      A04_Check
+      A06_Check
+      Paths_cs220
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is A05_Check
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010
+
+test-suite a06-check
+  type: exitcode-stdio-1.0
+  main-is: A06_Check.hs
+  other-modules:
+      A01_Check
+      A02_Check
+      A03_Check
+      A03_Check_Random_Instr
+      A03_Check_Random_Step
+      A04_Check
+      A05_Check
+      Paths_cs220
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is A06_Check
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , cs220
+    , generic-random
+    , mtl
+    , random
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+    , tasty-quickcheck >=0.10
+    , tasty-smallcheck >=0.8
+    , transformers
+  default-language: Haskell2010

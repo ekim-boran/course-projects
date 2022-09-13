@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+-- DO NOT MODIFY THIS SEGMENT
+-------------------------------------------------------------------------------
+
+let ZERO  = \f x -> x
+let ONE   = \f x -> f x
+let TWO   = \f x -> f (f x)
+let THREE = \f x -> f (f (f x))
+let FOUR  = \f x -> f (f (f (f x)))
+
+let INC   = \n f x -> f (n f x)
+let ADD   = \n m -> n INC m
+let MUL   = \n m -> n (ADD m) ZERO
+
+
+-------------------------------------------------------------------------------
+-- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
+-------------------------------------------------------------------------------
+eval suc_one :
+  INC ONE
+  =d> (\n f x -> f (n f x)) (\f x -> f x)
+  =a> (\n f x -> f (n f x)) (\g y -> g y)
+  =b> (\f x -> f ((\g y -> g y) f x)) 
+  =b> (\f x -> f ((\y -> f y) x)) 
+  =b> (\f x -> f ( f x ) )
+  =d> TWO
+
+eval add_zero_zero :
+  ADD ZERO ZERO
+  =d> (\n m -> n INC m) (\f x -> x) (\f x -> x)
+  =b> (\m ->  (\f x -> x) INC m) (\f x -> x)
+  =b> (\m ->  (\x -> x) m) (\f x -> x)
+  =b> (\m -> m) (\f x -> x)
+  =b> (\f x -> x)
+  =d> ZERO
+
+eval add_two_two :
+  ADD TWO TWO
+  =d>  (\n m -> n INC m)  (\f x -> f (f x)) (\f x -> f (f x))
+  =a>  (\n m -> n INC m)  (\f x -> f (f x)) (\ff xx -> ff (ff xx))
+  =b>  (\m -> (\f x -> f (f x)) INC m)   (\ff xx -> ff (ff xx))
+  =b>  (\f x -> f (f x))  INC (\ff xx -> ff (ff xx))
+  =b>  (\x -> INC (INC x)) (\ff xx -> ff (ff xx))
+  =b>  INC (INC (\ff xx -> ff (ff xx)))    
+  =d>  (\n f x -> f (n f x)) ((\n f x -> f (n f x)) (\ff xx -> ff (ff xx)))    
+  =b>  (\n f x -> f (n f x)) ((\f x -> f ((\ff xx -> ff (ff xx)) f x)))    
+  =b>  (\n f x -> f (n f x)) ((\f x -> f ((\ xx -> f (f xx)) x)))    
+  =b>  (\n f x -> f (n f x)) (\f x -> f ( f (f x)) )    
+  =a>  (\n f x -> f (n f x))  (\ff xx -> ff ( ff (ff xx)) )  
+  =b>  (\f x -> f ((\ff xx -> ff ( ff (ff xx)) )   f x))  
+  =b>  (\f x -> f ((\ xx -> f ( f (f xx)) )   x))  
+  =b>  (\f x -> f (f (f (f x)))) 
+  =d>  FOUR

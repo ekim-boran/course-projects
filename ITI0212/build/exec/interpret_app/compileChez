@@ -1,0 +1,1 @@
+(parameterize ([optimize-level 3] [compile-file-message #f]) (compile-program "/media/boran/hori/courses/completed/pl/ITI0212/build/exec/interpret_app/interpret.ss"))

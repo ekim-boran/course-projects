@@ -1,0 +1,52 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+inputdir = '/c/cs223/Hwk1/testFiles.final'
+
+if not os.path.exists(inputdir):
+    inputdir = 'testFiles.final' 
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-02-18 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on these later
+try:
+    t.copy('encode.c')
+except:
+    pass
+
+try:
+    t.copy('decode.c')
+except:
+    pass
+
+# 7 pts if encode.c compiles with all flags
+t.test(7, "gcc -std=c99 -Wall -pedantic -o encode encode.c", tester.Match(b''), 20)
+
+# 7 pts if encode.c compiles at all
+t.test(7, "gcc -std=c99 -o encode encode.c || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+# 7 pts if decode.c compiles with all flags
+t.test(7, "gcc -std=c99 -Wall -pedantic -o decode decode.c", tester.Match(b''), 20)
+
+# 7 pts if decode.c compiles at all
+t.test(7, "gcc -std=c99 -o decode decode.c || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+
+# sample inputs and outputs
+# 3 points for each test
+inputs = glob.glob(os.path.join(inputdir, '*.in'))
+inputs.sort()
+for input in inputs:
+    output = input.replace('.in', '.out')
+    inputBase = os.path.basename(input)
+    program = inputBase.split('.')[0]
+    t.copy(input)
+    t.test(3, 'LC_ALL=C ./{} < {}'.format(program, inputBase), 
+           tester.Match(open(output, "rb").read()))
+
+print(t.report())

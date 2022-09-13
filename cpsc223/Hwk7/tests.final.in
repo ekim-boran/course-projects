@@ -1,0 +1,10 @@
+empty-empty.final:./decrypt other-salt /dev/null < /dev/null
+empty-small.final:./decrypt other-salt /dev/null < turtles.encrypted
+small-small.final:./decrypt salt password.dict < turtles.encrypted
+small-small-wrong-salt.final:./decrypt pepper password.dict < turtles.encrypted
+big-small.final:./decrypt salt passwords.dict < turtles.encrypted
+ssn.final:./decrypt identity-theft ssn.dict < ssn.encrypted
+ssn-wrong-salt.final:./decrypt ssn ssn.dict < ssn.encrypted
+moby-moby.final:./decrypt whale moby.dict < moby.encrypted
+valgrind-small-small.final:valgrind -q --leak-check=full ./decrypt salt password.dict < turtles.encrypted > /dev/null
+valgrind-moby-moby.final:valgrind -q --leak-check=full ./decrypt whale moby.dict < moby.encrypted > /dev/null

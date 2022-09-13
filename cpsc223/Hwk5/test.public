@@ -1,0 +1,40 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk5'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+inputs = os.path.join(baseDir, 'tests.in')
+
+sourceFiles = ("Makefile wordArray.h testArrayRef.c testCreateDestroy.c testMinKey.c testIncKey.c testPrint.c testFill.c testMultiple.c ngrams.c").split()
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-03-18 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('wordArray.c')
+except:
+    pass
+
+# copy all the source files
+for i in sourceFiles:
+    t.copy(os.path.join(baseDir, i))
+
+# make succeeds
+t.test(16, "make all || echo compile failed", lambda s: s.find(b'compile failed') < 0, 10)
+
+# sample inputs and outputs
+for line in open(inputs, 'r'):
+    file, command = line.split(':')
+    output = file + ".out"
+    command = command.strip()
+    t.test(7, command, tester.Match(open(os.path.join(baseDir, output), "rb").read()), 10)
+
+print(t.report())

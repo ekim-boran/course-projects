@@ -1,0 +1,4 @@
+
+:set -fwarn-incomplete-patterns
+:set -fno-warn-unused-binds 
+:set -fno-warn-unused-imports 

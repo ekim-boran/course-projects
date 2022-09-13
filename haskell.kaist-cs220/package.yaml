@@ -1,0 +1,113 @@
+name:                cs220
+version:             0.1.0.0
+git:                 "https://cp-git.kaist.ac.kr/cs220/cs220.git"
+license:             BSD3
+author:              "Jeehoon Kang"
+maintainer:          "jeehoon.kang@kaist.ac.kr"
+copyright:           "2021 Jeehoon Kang"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Gitlab at <https://cp-git.kaist.ac.kr/cs220/cs220>
+
+dependencies:
+- base >= 4.7 && < 5
+- tasty >= 1.4
+- tasty-hunit >= 0.10
+- tasty-smallcheck >= 0.8
+- tasty-quickcheck >= 0.10
+- containers
+- generic-random
+- mtl
+- transformers
+- random
+
+library:
+  source-dirs: src
+
+executables:
+  cs220-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cs220
+
+tests:
+  a01-check:
+    main:                A01_Check.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is A01_Check
+    dependencies:
+    - cs220
+
+  a02-check:
+    main:                A02_Check.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is A02_Check
+    dependencies:
+    - cs220
+
+  a03-check:
+    main:                A03_Check.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is A03_Check
+    dependencies:
+    - cs220
+
+  a04-check:
+    main:                A04_Check.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is A04_Check
+    dependencies:
+    - cs220
+
+  a05-check:
+    main:                A05_Check.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is A05_Check
+    dependencies:
+    - cs220
+
+  a06-check:
+    main:                A06_Check.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is A06_Check
+    dependencies:
+    - cs220

@@ -1,0 +1,5 @@
+packages:
+  adder.cabal
+
+store-dir: /software/CSE/cse131/.cabal/store
+

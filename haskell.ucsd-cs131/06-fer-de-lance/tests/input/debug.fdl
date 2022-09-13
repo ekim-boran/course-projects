@@ -1,0 +1,19 @@
+def tail(l):
+  l[1]
+
+def add(n):
+  n * 10
+
+def map(f, xs): 
+  if xs == false:
+    false
+  else: 
+    let h = xs[0]
+      , t = tail(xs)
+    in
+       (add(h), map(f, t))
+
+let l0 = (2, false)
+in
+    map(add, l0)
+

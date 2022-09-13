@@ -1,0 +1,30 @@
+STACK=stack
+
+
+test: clean
+	$(STACK) test --allow-different-user
+
+bin:
+	$(STACK) build --allow-different-user
+
+clean: 
+	$(STACK) clean --allow-different-user
+
+ghci:
+	$(STACK) repl --allow-different-user
+
+distclean: clean 
+	rm -rf .stack-work 
+
+tags:
+	hasktags -x -c lib/
+
+turnin: 
+	git commit -a -m "turnin"
+	git push origin main
+
+upstream:
+	git remote add upstream https://github.com/ucsd-cse131/00-warmup.git
+
+update:
+	git pull upstream main

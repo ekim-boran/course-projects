@@ -1,0 +1,16 @@
+empty.final:./testInserter < /dev/null
+singleton.final:echo singleton | ./testInserter
+nowHereThis.final:echo now here this| ./testInserter
+aba.final:echo a b a | ./testInserter
+duplicates.final:yes 2> /dev/null | head -1000000 | ./testInserter
+up.final:seq -w 11000 | ./testInserter
+down.final:seq -w 8000 -1 0 | ./testInserter
+updown.final:(seq -w 2000; seq -w 3000 -1 900) | ./testInserter
+reflection.final:./testInserter < testInserter.c
+multiple.final:(seq -f '0 a%g' 10000; seq -f '1 b%g' 10000) | ./testInserter 3
+randomish5.final:python -c 'for i in range(100001): print(i*17321%100000)' | ./testInserter
+randomish6.final:python -c 'for i in range(1000001): print(i*17321%1000000)' | ./testInserter
+up6.final:seq -w 1000001 | ./testInserter
+down6.final:seq -w 1000001 -1 0 | ./testInserter
+valgrind.final:python -c 'for i in range(10001): print(i*137/10000)' | valgrind -q ./testInserter > /dev/null
+valgrind-multiple.final:(seq -f '0 a%g' 1001; seq -f '1 b%g' 1001 -1 0) | valgrind -q ./testInserter 3 > /dev/null

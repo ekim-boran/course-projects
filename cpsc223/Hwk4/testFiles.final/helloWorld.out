@@ -1,0 +1,19 @@
+[NRUTE RDLROWO]
+#llehstu <pnrut.e>
+#rvgrans <egasur.r>
+#edtsftn <irpfcg.r>
+#afivgra <rahccg.r>
+
+atn
+inia(mtn ihtr, essa **edul)
+{
+
+    cn(ihtn != 1) {
+        idtsedu(lcnihb, "Ildts: %e\d", ulcn[0]);
+        ihoidt 1;
+    }
+
+    sedu("Lcnin, oisre!");
+
+    vlanif 0;
+}

@@ -1,0 +1,16 @@
+empty:./testInserter < /dev/null
+aaa:echo aaa | ./testInserter
+ab:echo a b | ./testInserter
+ba:echo b a | ./testInserter
+aba:echo a b a | ./testInserter
+up:seq -w 1000 | ./testInserter
+down:seq -w 1000 -1 0 | ./testInserter
+updown:(seq -w 1000; seq -w 2000 -1 900) | ./testInserter
+reflection:./testInserter < testInserter.c
+multiple:(seq -f '0 a%g' 100000; seq -f '1 b%g' 100000) | ./testInserter 3
+randomish5:python -c 'for i in range(100000): print(i*17321%100000)' | ./testInserter
+randomish6:python -c 'for i in range(1000000): print(i*17321%1000000)' | ./testInserter
+up6:seq -w 1000000 | ./testInserter
+down6:seq -w 1000000 -1 0 | ./testInserter
+valgrind:python -c 'for i in range(10000): print(i*137/10000)' | valgrind -q ./testInserter > /dev/null
+valgrind-multiple:(seq -f '0 a%g' 1000; seq -f '1 b%g' 1000 -1 0) | valgrind -q ./testInserter 3 > /dev/null

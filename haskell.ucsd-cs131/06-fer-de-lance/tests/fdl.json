@@ -1,0 +1,10 @@
+[ { "name" : "lam-00", "code" : "file", "result" : { "value" : "1" } }
+, { "name" : "lam-01", "code" : "file", "result" : { "value" : "11"} }
+, { "name" : "lam-02", "code" : "file", "result" : { "value" : "30"} }
+, { "name" : "lam-03", "code" : "file", "result" : { "value" : "(2, 11)"} }
+, { "name" : "lam-04", "code" : "file", "result" : { "value" : "11"  } }
+, { "name" : "lam-05", "code" : "file", "result" : { "value" : "102" } }
+, { "name" : "lam-06", "code" : "file", "result" : { "value" : "202" } }
+, { "name" : "map"   , "code" : "file", "result" : { "value" : "(0, (10, (20, (30, (40, false)))))"} }
+, { "name" : "foldl" , "code" : "file", "result" : { "value" : "(6, 24, 120)"} }
+]

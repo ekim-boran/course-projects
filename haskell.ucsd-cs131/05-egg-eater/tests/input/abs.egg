@@ -1,0 +1,11 @@
+def absVal(n):
+  if (n < 0):
+    0 - n
+  else:
+    n
+
+let t0 = print(absVal(0)),
+    t1 = print(absVal(5)),
+    t2 = print(absVal(3 - 10))
+in
+    0

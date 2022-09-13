@@ -1,0 +1,47 @@
+#!/usr/bin/python
+
+import tester
+import sys
+import os
+import time
+import glob
+
+baseDir = '/c/cs223/Hwk12'
+
+if not os.path.exists(baseDir):
+    baseDir = '.'
+
+inputDir = os.path.join(baseDir, 'testFiles')
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-05-06 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on this later
+try:
+    t.copy('Makefile')
+    for i in glob.glob('*.[ch]'):
+        t.copy(i)
+except:
+    pass
+
+# make succeeds
+t.test(20, "make coloring || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+t.copy(os.path.join(baseDir, 'testColoring'), mode=0o555)
+
+# sample inputs and outputs
+inputs = glob.glob(os.path.join(inputDir, '*.graph'))
+inputs.sort()
+for input in inputs:
+    inputBase = os.path.basename(input)
+    t.copy(input)
+    t.test(6, './coloring < {} > c && ./testColoring {} < c'.format(inputBase, inputBase), 
+           tester.Match(b"Good coloring!\n"), 10)
+
+# valgrind
+for i in ("cube3.graph", "rc20.graph"):
+    t.log("# valgrind test on {}".format(i))
+    t.test(10, "exec valgrind -q --partial-loads-ok=yes --leak-check=yes ./coloring < {} > /dev/null".format(i),
+        tester.Match(b''),
+        30)
+
+print(t.report())

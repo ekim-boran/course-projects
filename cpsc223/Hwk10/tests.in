@@ -1,0 +1,10 @@
+buy:./testOrderBook 3 < buy.orders
+buySell:./testOrderBook 3 < buySell.orders
+equal:./testOrderBook 3 < equal.orders
+many:./testOrderBook 3 < many.orders
+sellBuy:./testOrderBook 3 < sellBuy.orders
+sell:./testOrderBook 3 < sell.orders
+twoBooks:./testOrderBook 3 < twoBooks.orders
+hft66:./testOrderBook 1337 1000000 1000000
+valgrind:valgrind -q --leak-check=full ./testOrderBook 1337 1000 1000
+valgrind-many:valgrind -q --leak-check=full ./testOrderBook 1 < many.orders

@@ -1,0 +1,71 @@
+#!/usr/bin/python3
+
+import tester
+import sys
+import os
+import time
+import glob
+
+inputDir = '/c/cs223/Hwk2'
+
+if not os.path.exists(inputDir):
+    inputDir = '.' 
+
+t = tester.Tester(dueDate = time.mktime(time.strptime('2021-02-25 17:00', '%Y-%m-%d %H:%M')))
+
+# we will catch errors on these later
+try:
+    t.copy('printFixed.c')
+except:
+    pass
+
+# other source files
+sourceFiles = ['printFixed.h', 'main.c']
+
+for i in sourceFiles:
+    t.copy(os.path.join(inputDir, i))
+
+
+# 10 pts if program compiles with all flags
+t.test(10, "gcc -std=c99 -Wall -pedantic -o main main.c printFixed.c -lm", tester.Match(b''), 20)
+
+# 10 pts if program compiles at all
+t.test(10, "gcc -std=c99 -o main main.c printFixed.c -lm || echo compile failed", lambda s: s.find(b'compile failed') < 0, 20)
+
+# sample outputs
+# we will reconstruct inputs from these
+outputs = [ 
+        b'0.',
+        b'0.01',
+        b'-0.01',
+        b'1.23',
+        b'1.2345',
+        b'-1.2345',
+        b'123.45',
+        b'12,345.678',
+        b'-12,345.678',
+        b'9,223,372,036,854,775,807.',     # LLONG_MAX on Zoo
+        b'-9,223,372,036,854,775,808.',    # LLONG_MIN on Zoo
+        b'9,223,372,036,854,775.807',
+        b'-9,223,372,036,854,775.808',
+        b'-9.223372036854775808',
+        b'0.00000001234567',
+        b'123,456.789'
+        ]
+
+# 5 points for each output
+for output in outputs:
+    integerPart, fractionalPart = output.split(b'.')
+    integerPart = integerPart.replace(b',', b'')
+    number = (integerPart + fractionalPart).decode('ascii')
+    precision = len(fractionalPart)
+    program = 'main'
+
+    t.test(4, 'LC_ALL=C ./{} {} , . {}'.format(program, number, precision), 
+           tester.Match(output + b"\n"))
+    # also try with strange markers just to make sure not hardcoded
+    altOutput = output.replace(b',', b'X').replace(b'.', b'Y')
+    t.test(1, 'LC_ALL=C ./{} {} X Y {}'.format(program, number, precision), 
+           tester.Match(altOutput + b"\n"))
+
+print(t.report())

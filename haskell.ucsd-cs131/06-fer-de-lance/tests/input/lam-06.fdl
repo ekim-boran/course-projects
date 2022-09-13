@@ -1,0 +1,7 @@
+def compose(f, g):
+  lambda (x): f(g(x))
+
+def incr(x):
+  x + 1
+
+compose(incr, incr)(200)

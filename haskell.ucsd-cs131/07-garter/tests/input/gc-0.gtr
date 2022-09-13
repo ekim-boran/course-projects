@@ -1,0 +1,9 @@
+def foo(a, b):
+  let tmp = (a, b, (a, b, b)) 
+  in tmp[0] + tmp[1]  + 1
+
+
+let x = let y = (1, 2, foo(1,  1  )) in y[0]
+in
+let a = (1, 2, (5, 6, 3)) in
+(x, a[1], (a[2])[2])

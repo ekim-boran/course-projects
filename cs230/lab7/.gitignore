@@ -1,0 +1,6 @@
+*.o
+/.noproxy
+/.proxy
+/proxy
+/tiny/cgi-bin/adder
+/tiny/tiny

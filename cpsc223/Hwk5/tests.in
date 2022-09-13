@@ -1,0 +1,11 @@
+createDestroy:./testCreateDestroy 5
+minKey:./testMinKey 5
+incKey:./testIncKey abqrz
+refab:./testArrayRef 2 ab
+refAB:./testArrayRef 2 AB
+refabc:./testArrayRef 2 abc
+print:./testPrint 3
+fill:./testFill 3
+multiple:./testMultiple 3 10
+ngrams:./ngrams 3 < ngrams.c
+valgrind:valgrind -q --partial-loads-ok=yes --leak-check=yes ./testMultiple 3 5

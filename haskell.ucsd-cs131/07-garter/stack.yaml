@@ -1,0 +1,9 @@
+resolver: nightly-2022-06-06
+compiler: ghc-9.2.2
+system-ghc: true
+allow-newer: true
+
+packages:
+- '.'
+extra-deps:
+        - tasty-json-0.1.0.0@sha256:a06fdadd650ff9f729319daf69f57eacf91f389a851983d07fe1354d58851061,1143

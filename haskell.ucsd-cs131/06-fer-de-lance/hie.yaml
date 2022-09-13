@@ -1,0 +1,8 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "fdl:lib"
+    - path: "./lib"
+      component: "fdl:lib"
+    - path: "./sol"
+      component: "fdl:lib"

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "gc-0",
+    "code": "file",
+    "heap": 15,
+    "result": {
+      "value": "(1, 2, 3)"
+    }
+  },
+  {
+    "name": "gc-1",
+    "code": "file",
+    "heap": 10,
+    "result": {
+      "value": "(16, 26, 36)"
+    }
+  },
+  {
+    "name": "gc-2",
+    "code": "file",
+    "heap": 10,
+    "result": {
+      "value": "(61, 62, 63)"
+    }
+  },
+  {
+    "name": "gc-3",
+    "code": "file",
+    "heap": 10,
+    "result": {
+      "value": "(60001, 60002, 60003)"
+    }
+  },
+  {
+    "name": "gc-fun-0",
+    "code": "file",
+    "heap": 10,
+    "result": {
+      "value": "(60001, 60002, 60003)"
+    }
+  },
+  {
+    "name": "gc-fun-1",
+    "code": "file",
+    "heap": 20,
+    "result": {
+      "value": "45"
+    }
+  },
+  {
+    "name": "gc-copy-0",
+    "code": "file",
+    "heap": 10,
+    "result": {
+      "value": "(60001, 60002, 60003)"
+    }
+  },
+  {
+    "name": "gc-copy-1",
+    "code": "file",
+    "heap": 10,
+    "result": {
+      "value": "(60001, 60002, 60003)"
+    }
+  },
+  {
+    "name": "gc-list-0",
+    "code": "file",
+    "heap": 24,
+    "result": {
+      "value": "(6, 6)"
+    }
+  },
+  {
+    "name": "list-0",
+    "code": "file",
+    "heap": 24,
+    "result": {
+      "value": "(0, (1, (2, (3, (4, (5, false))))))"
+    }
+  },
+  {
+    "name": "list-1",
+    "code": "file",
+    "heap": 24,
+    "result": {
+      "value": "6"
+    }
+  },
+  {
+    "name": "list-2",
+    "code": "file",
+    "heap": 48,
+    "result": {
+      "value": "(5, (4, (3, (2, (1, (0, false))))))"
+    }
+  },
+  {
+    "name": "list-3",
+    "code": "file",
+    "heap": 36,
+    "result": {
+      "value": "(0, (1, (2, (3, (4, (5, false))))))"
+    }
+  },
+  {
+    "name": "list-4",
+    "code": "file",
+    "heap": 36,
+    "result": {
+      "value": "(0, (1, (2, (3, (4, (5, false))))))"
+    }
+  },
+  {
+    "name": "list-full",
+    "code": "file",
+    "heap": 72,
+    "result": {
+      "value": "6\n(5, (4, (3, (2, (1, (0, false))))))\n(0, (1, (2, (3, (4, (5, (0, (1, (2, (3, (4, (5, false))))))))))))\n0"
+    }
+  }
+]
